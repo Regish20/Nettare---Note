@@ -340,6 +340,7 @@ function updateScrollEffects() {
   hero.style.setProperty("--hero-index-opacity", Math.max(0, 1 - progress * 1.3).toFixed(3));
   hero.style.setProperty("--hero-index-y", `${Math.round(progress * -35)}px`);
   $(".site-header").classList.toggle("is-scrolled", window.scrollY > 100);
+  document.body.classList.toggle("has-scrolled", window.scrollY > 80);
   scrollFrame = null;
 }
 
