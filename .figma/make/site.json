@@ -1,0 +1,10 @@
+{
+  "description": "This e-commerce platform offers a sophisticated shopping experience for men, featuring a sleek design and curated product selections that emphasize elegance and accessibility.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

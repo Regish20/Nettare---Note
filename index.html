@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nettare & Note — perfumería de autor en ediciones limitadas." />
+    <title>Nettare & Note — Perfumería de autor</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="preload" as="image" href="./assets/images/hero-khamrah.png?v=3" />
+    <link rel="stylesheet" href="./styles.css?v=11" />
+  </head>
+  <body>
+    <a class="skip-link" href="#catalogo">Saltar al catálogo</a>
+
+    <header class="site-header" id="inicio">
+      <a class="brand" href="#inicio" aria-label="Nettare & Note, inicio">
+        <span>Nettare</span>
+        <small>&amp; Note · Parfums</small>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a href="#catalogo">Colecciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button cart-trigger" type="button" aria-label="Abrir carrito">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.7 8.4V6.8a5.3 5.3 0 0 1 10.6 0v1.6M4.5 8.4h15l-1 12H5.5l-1-12Z" /></svg>
+          <span class="cart-count" aria-live="polite">0</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" aria-label="Navegación móvil">
+        <a href="#catalogo">Colecciones</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" role="img" aria-label="Perfume Khamrah de Lattafa sobre una composición oscura"></div>
+        <div class="hero-wash"></div>
+        <div class="hero-copy">
+          <p class="eyebrow">Lattafa · Colección Khamrah</p>
+          <h1 id="hero-title">Perfumes<span class="mobile-break"><br /></span> que<br /><em>dejan rastro.</em></h1>
+          <p class="hero-intro">Dos composiciones intensas de Lattafa: el ámbar especiado de Khamrah y el carácter tostado de Khamrah Qahwa.</p>
+          <a class="text-link" href="#catalogo">Descubrir la colección <span>↘</span></a>
+        </div>
+        <p class="hero-index" aria-hidden="true">Eau de parfum<br />100 ml · 2026</p>
+      </section>
+
+      <aside class="service-strip" aria-label="Beneficios de compra" data-reveal>
+        <p>Envío de cortesía desde S/ 200</p>
+        <p>Muestra elegida con cada pedido</p>
+        <p>Khamrah y Qahwa · 100 ml</p>
+      </aside>
+
+      <section class="catalog-section" id="catalogo" aria-labelledby="catalog-title">
+        <header class="section-heading" data-reveal>
+          <div>
+            <p class="eyebrow">El gabinete olfativo</p>
+            <h2 id="catalog-title">Encuentra tu<br /><em>próxima firma.</em></h2>
+          </div>
+          <p>Dos interpretaciones de una firma cálida y envolvente: el ámbar especiado de Khamrah y la profundidad tostada de Qahwa.</p>
+        </header>
+
+        <div class="catalog-toolbar" data-reveal>
+          <div class="filters" role="group" aria-label="Filtrar productos">
+            <button class="filter is-active" type="button" data-filter="todos">Todos <sup>2</sup></button>
+            <button class="filter" type="button" data-filter="original">Khamrah original</button>
+            <button class="filter" type="button" data-filter="qahwa">Khamrah Qahwa</button>
+          </div>
+          <span class="result-count">2 piezas</span>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+    </main>
+
+    <footer id="contacto">
+        <div class="footer-brand" data-reveal>Nettare <i>&amp;</i> Note</div>
+      <div class="footer-grid">
+        <div><p class="footer-label">Encuéntranos</p><p>Lima, Perú<br />Atención y envíos a nivel nacional</p></div>
+        <div><p class="footer-label">Escríbenos</p><a href="mailto:hola@nettarenote.com">hola@nettarenote.com</a><br /><span>Atención por WhatsApp</span></div>
+        <div><p class="footer-label">Síguenos</p><a href="#">Instagram</a><br /><a href="#">Pinterest</a></div>
+        <div><p class="footer-label">La letra pequeña</p><a href="#">Envíos y devoluciones</a><br /><a href="#">Privacidad</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Nettare &amp; Note</span><span>Perfumería de autor · Perú</span></div>
+    </footer>
+
+    <div class="overlay" data-close-layer></div>
+
+    <section class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true">
+      <button class="modal-close icon-button" type="button" aria-label="Cerrar detalle" data-close-layer>×</button>
+      <div class="modal-image"><img src="" alt="" /></div>
+      <div class="modal-content">
+        <p class="eyebrow modal-family"></p>
+        <h2 id="modal-title"></h2>
+        <p class="modal-story"></p>
+        <div class="note-pyramid">
+          <div><span>Salida</span><strong class="note-top"></strong></div>
+          <div><span>Corazón</span><strong class="note-heart"></strong></div>
+          <div><span>Fondo</span><strong class="note-base"></strong></div>
+        </div>
+        <div class="modal-purchase">
+          <div><small>Eau de parfum · 100 ml</small><strong class="modal-price"></strong></div>
+          <button class="primary-button modal-add" type="button">Añadir al gabinete</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+      <header><div><p class="eyebrow">Tu selección</p><h2 id="cart-title">El gabinete</h2></div><button class="icon-button" type="button" aria-label="Cerrar carrito" data-close-layer>×</button></header>
+      <div class="cart-items"></div>
+      <div class="cart-empty"><span>00</span><p>Tu gabinete aún está vacío.</p><button class="text-link" type="button" data-close-layer>Explorar fragancias →</button></div>
+      <footer class="cart-summary">
+        <div class="cart-total-row"><span>Subtotal</span><strong class="cart-total">S/ 0</strong></div>
+        <p>Envío coordinado directamente por WhatsApp.</p>
+        <form class="checkout-form" id="whatsapp-order-form">
+          <p class="checkout-title">Datos para coordinar</p>
+          <div class="checkout-grid">
+            <label>Nombre<input type="text" name="customerName" autocomplete="name" maxlength="60" required /></label>
+            <label>Teléfono<input type="tel" name="customerPhone" autocomplete="tel" inputmode="tel" maxlength="24" required /></label>
+          </div>
+          <label>Modalidad de entrega
+            <select name="deliveryMethod" required>
+              <option value="Delivery">Delivery</option>
+              <option value="Recojo coordinado">Recojo coordinado</option>
+            </select>
+          </label>
+          <label>Dirección o distrito<input type="text" name="address" autocomplete="street-address" maxlength="120" required /></label>
+          <label>Indicaciones adicionales<textarea name="customerNote" rows="2" maxlength="240" placeholder="Horario, referencia o consulta (opcional)"></textarea></label>
+          <button class="whatsapp-order" type="submit">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3.5 20.5l1.4-4.2A8.5 8.5 0 1 1 20.5 11.6Z"/><path d="M8.2 7.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 2c.1.3 0 .5-.2.7l-.6.7c.8 1.6 2 2.8 3.6 3.5l.7-.8c.2-.2.4-.3.7-.2l2 .9c.3.1.4.3.4.6v.5c0 .4-.2.7-.5.9-.5.3-1.2.5-1.8.5-2.2 0-4.7-1.3-6.5-3.1-1.8-1.8-3-4.2-3-6.2 0-.7.2-1.4.5-1.9.2-.3.5-.5.9-.5"/></svg>
+            Enviar pedido por WhatsApp
+          </button>
+          <small class="checkout-help">Se abrirá WhatsApp con el pedido listo para enviar.</small>
+        </form>
+      </footer>
+    </aside>
+
+    <aside class="assistant" aria-live="polite">
+      <section class="assistant-panel" aria-hidden="true">
+        <header><div class="assistant-mark">N<span>&amp;</span></div><div><strong>Asistente olfativo</strong><small>Te orientamos al instante</small></div><button class="assistant-close" type="button" aria-label="Cerrar asistente">×</button></header>
+        <div class="assistant-messages"><p class="bot-message">Bonjour. Soy el asistente de Nettare &amp; Note. ¿En qué puedo ayudarte?</p></div>
+        <div class="quick-questions">
+          <button type="button" data-answer="recommend">¿Qué perfume me recomiendan?</button>
+          <button type="button" data-answer="lasting">¿Cuánto dura la fragancia?</button>
+          <button type="button" data-answer="shipping">Envíos y devoluciones</button>
+          <button type="button" data-answer="samples">¿Incluyen muestras?</button>
+          <button class="advisor-question" type="button" data-contact-advisor>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.5L3.5 20.5l1.4-4.2A8.5 8.5 0 1 1 20.5 11.6Z"/><path d="M8.2 7.5c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.8 2c.1.3 0 .5-.2.7l-.6.7c.8 1.6 2 2.8 3.6 3.5l.7-.8c.2-.2.4-.3.7-.2l2 .9c.3.1.4.3.4.6v.5c0 .4-.2.7-.5.9-.5.3-1.2.5-1.8.5-2.2 0-4.7-1.3-6.5-3.1-1.8-1.8-3-4.2-3-6.2 0-.7.2-1.4.5-1.9.2-.3.5-.5.9-.5"/></svg>
+            <span>Contactar con un asesor</span>
+          </button>
+        </div>
+      </section>
+      <button class="assistant-trigger" type="button" aria-label="Abrir asistente olfativo" aria-expanded="false">
+        <span class="assistant-avatar" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M16 5v3" /><circle cx="16" cy="4" r="1.5" /><rect x="9" y="8" width="14" height="12" rx="6" /><path d="M12.5 20v2.5M19.5 20v2.5M7 28c.8-4 3.8-6 9-6s8.2 2 9 6" /><path d="M13 13h.01M19 13h.01M13 17c1.8 1.2 4.2 1.2 6 0" /></svg>
+          <i></i>
+        </span>
+        <span class="assistant-trigger-copy"><small>Asistente personal</small><strong>¿Te ayudamos?</strong></span>
+      </button>
+    </aside>
+
+    <div class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./script.js?v=11"></script>
+  </body>
+</html>
