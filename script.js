@@ -55,7 +55,6 @@ function renderProducts(list = products) {
         <p class="product-family">${product.family}</p>
         <h3>${product.name}</h3>
         <span class="product-price">${money(product.price)}</span>
-        <p class="product-notes">${product.notes.join(" · ")}</p>
         <div class="product-footer">
         <p class="product-format">Eau de parfum <span>100 ml</span></p>
           <button class="quick-add" type="button" data-add="${product.id}">Añadir <span aria-hidden="true">+</span></button>
